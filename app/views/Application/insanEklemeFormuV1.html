@@ -1,0 +1,28 @@
+#{extends 'main.html'/}
+#{set title:'İnsan Ekle' /}
+#{set js: 'page/index' /}
+
+
+<form action="@{Application.insanEkleV1()}" method="post" >
+	<p>
+		<label>kullaniciAdi</label>
+		<input type="text" name="insan.kullaniciAdi"/>
+	</p>
+
+	<p>
+		<label>İsim</label>
+		<input type="text" name="insan.isim"/>
+	</p>
+
+	<p>
+		<label>Soyisim</label>
+		<input type="text" name="insan.soyisim"/>
+	</p>
+
+	<p>
+		<label>Dogum yeri</label>
+		<input type="text" name="insan.dogumYeri"/>
+	</p>
+
+	<button type="submit">Kaydet</button>
+</form>

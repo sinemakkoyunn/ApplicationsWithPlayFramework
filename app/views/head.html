@@ -1,0 +1,23 @@
+<title>#{get 'title' /}</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="@{'/public/stylesheets/bootstrap.css'}">
+<link rel="stylesheet" href="@{'/public/stylesheets/bootstrap-theme.min.css'}">
+<link rel="stylesheet" href="@{'/public/stylesheets/main.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/pnotify.custom.min.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/bootstrap-editable.css'}">
+<link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+
+#{get 'moreStyles' /}
+
+<link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+
+<script src="@{'/public/javascripts/config.js'}"></script>
+<script data-main="#{get 'js'/}" src="@{'/public/javascripts/lib/require.js'}"></script>
+<script type="text/javascript">
+	#{if flash.error}
+		window.__errors = ['${flash.error.raw()}'];
+	#{/if}
+	#{if flash.success}
+		window.__successes = ['${flash.success.raw()}'];
+	#{/if}
+</script>

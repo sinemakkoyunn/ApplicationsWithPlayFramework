@@ -1,0 +1,9 @@
+#{extends 'main.html'/}
+#{set title:'insan Listele' /}
+#{set js: 'page/index' /}
+
+<ul>
+#{list items:insanList, as:'insan'}
+	<li>${insan.dogumYeri} sehri dogumlu ${insan.isim}  ${insan.soyisim} <strong>"${insan.kullaniciAdi}"</strong> ile kayıt olmustur</li>
+#{/list}
+</ul>

@@ -1,0 +1,27 @@
+body {
+	padding-top: 70px;
+}
+
+a.editable {
+	margin-top: 0;
+	color: #333333;
+}
+
+.js-cd-table ul {
+	list-style-type: none;
+}
+
+.top-buffer { margin-top: 10px; }
+
+.bottom-buffer { margin-bottom: 10px; }
+
+.js-current {
+	opacity: 1.0 !important;
+}
+
+h1.page-header {
+	margin-top: 0 !important;
+	font-size: 2em;
+	text-align: left;
+	color: #428bca;
+}
