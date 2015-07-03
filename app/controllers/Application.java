@@ -25,6 +25,7 @@ public class Application extends Controller {
     public static void insanEkleV1(Insan insan) {
         insan.save();
         insanListeleV1();
+        handsontable();
     }
 
     /**
@@ -39,4 +40,5 @@ public class Application extends Controller {
      * Flight.js kullanılan sayfayı cagırır
      */
     public static void insanlar() { render(); }
+    public static void handsontable() { render(); }
 }

@@ -17,7 +17,8 @@ require = {
     'pnotify' : 'lib/pnotify.custom.min',
     'bootstrap-editable': 'lib/bootstrap-editable.min',
     'parsley-override': 'lib/parsley.override',
-    'handlebars': 'lib/handlebars'
+    'handlebars': 'lib/handlebars',
+    'handsontable' : 'lib/handsontable.full.min'
   },
   shim: {
     'bootstrap': {
@@ -50,6 +51,9 @@ require = {
     },
     'typeahead': {
       deps: [ 'jquery' ]
+    },
+    'handsontable': {
+      deps: [ 'jquery']
     }
   }
 };

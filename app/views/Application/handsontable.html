@@ -1,0 +1,9 @@
+#{extends 'main.html'/}
+#{set title:'Table' /}
+#{set js: 'page/handsontable' /}
+<link rel="stylesheet" href="@{'/public/stylesheets/handsontable.full.min.css'}">
+
+
+<form action="@{Application.handsontable()}" method="get" >
+    <div class="handsontable js-handsontable table table-responsive table-striped table-hover" style="overflow:hidden"></div>
+</form>
